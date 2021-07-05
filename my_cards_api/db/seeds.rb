@@ -15,6 +15,6 @@
 # Category.create(sport: "hockey")
 
 
- Card.create(name: "Micheal Vick", image: "https://www.biography.com/.image/t_share/MTIwNjA4NjMzNjA2MzQyMTU2/michael-vick-241100-1-402.jpg", category_id: 1, team: "Atlanta Falcons")
+#  Card.create(name: "Micheal Vick", image: "https://www.biography.com/.image/t_share/MTIwNjA4NjMzNjA2MzQyMTU2/michael-vick-241100-1-402.jpg", category_id: 1, team: "Atlanta Falcons")
 
- Card.create(name: "Derrick Rose", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4WUS4sy2rM7nHdEG18d1qZ-gWAoaA2PXipQ&usqp=CAU", category_id: 2, team: "Chicago Bulls")
+#  Card.create(name: "Derrick Rose", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4WUS4sy2rM7nHdEG18d1qZ-gWAoaA2PXipQ&usqp=CAU", category_id: 2, team: "Chicago Bulls")
