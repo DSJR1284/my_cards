@@ -7,20 +7,20 @@ class CardCall{
     getCards(){
         fetch(`${this.endpoint}/cards`)
         .then(resp => resp.json())
-        .then(cards =>{ 
+        .then(cards => { 
             for (const card of cards){
                 const c = new Card(card)
                 c.displayCards()
             }            
         })
     }
-    
+
     createCard(){
         const card = {
-            name: document.getElementById('name').value, 
-            image: document.getElementById('image').value,  
-            team: document.getElementById('team').value,
-            category_id: 1
+            name: document.getElementBy('name').value, 
+            image: document.getElementBy('image').value,  
+            team: document.getElementBy('team').value,
+            
         }
     }
 
