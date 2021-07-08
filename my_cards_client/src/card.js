@@ -22,12 +22,15 @@ class Card{
     }
 
     cardHTML(){       
-        this.element.innerHTML += `            
+        this.element.innerHTML += ` 
+            <br>           
             <div>
             <h3>${this.name}</h3>
                 <img src='${this.image}' width = 150px />
                 <h3>${this.team}</h3>
-            </div>`
+            </div>
+            <button id="delete-btn">Remove Card</button>             
+            `
 
             return this.element
     }
