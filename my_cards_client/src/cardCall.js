@@ -20,16 +20,22 @@ class CardCall{
             name: document.querySelector("#name").value, 
             image: document.querySelector("#image").value,  
             team: document.querySelector("#team").value,
-            category_id: 1             
+            category_id: document.querySelector("#sport").value             
         }
-        debugger;
-        
+            
         const configObj = {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'            
             },
             body: JSON.stringify(card)
-    }
+        }    
 
+        fetch(`${this.endpoint}/cards`, configObj)
+        .then(resp => resp.json())
+        .then(cards => {
+            const c = new Card(card)
+            c.displayCards()
+        })
+    }
 }
