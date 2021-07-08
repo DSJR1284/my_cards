@@ -38,4 +38,15 @@ class CardCall{
             c.displayCards()
         })
     }
+
+    deleteCard(id){
+        fetch(`${this.endpoint}/cards/${id}`, {
+            method: 'DELETE',
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+        .then(resp => resp.json())
+        .then(json => {debugger;})
+    }
 }

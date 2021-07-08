@@ -36,6 +36,7 @@ class CardsController < ApplicationController
   # DELETE /cards/1
   def destroy
     @card.destroy
+    render json: {message: "Card was Removed From Collection"}
   end
 
   private

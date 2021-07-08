@@ -15,8 +15,7 @@ class Card{
         this.element = document.createElement('div')
         this.element.dataset.id = this.id
         this.element.id = `card-${this.id}`
-        // this.element.addEventListener('click', this.handleCreateCard)
-        // this.element.addEventListener('click', this.handleClickDelete)
+        this.element.addEventListener('click', this.deleteCard)
 
         Card.all.push(this)
     }
@@ -60,8 +59,12 @@ class Card{
         </form>`
     }
 
-
-
-
+    deleteCard = () => {
+        debugger;
+        if (event.target.innerText === 'Remove Card'){
+            this.element.remove()
+            cardCall.deleteCard(this.id)
+        }
+    }
 
 }

@@ -3,13 +3,15 @@ const categoryCall = new CategoryCall(baseUrl)
 const cardCall = new CardCall(baseUrl)
 const cardForm = document.querySelector("#form-container")
 const showCard = document.querySelector("#card-container")
-
-
-Card.cardForm.addEventListener('submit', addACard)
+const removeCard = document.querySelector("#delete-btn")
 
 cardCall.getCards()
 Card.displayCardForm()
 
+Card.cardForm.addEventListener('submit', addACard)
+
+
 function addACard(){
     cardCall.createCard()
 }
+
