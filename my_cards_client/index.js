@@ -11,5 +11,5 @@ cardCall.getCards()
 Card.displayCardForm()
 
 function addACard(){
-    debugger;
+    cardCall.createCard()
 }

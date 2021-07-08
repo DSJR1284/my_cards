@@ -32,8 +32,7 @@ class Card{
             return this.element
     }
 
-    displayCards(){
-        
+    displayCards(){        
         Card.showCard.append(this.cardHTML())
     }
 
@@ -57,6 +56,8 @@ class Card{
                 <input type="submit" id="create" value="Add A Card">
         </form>`
     }
+
+
 
 
 

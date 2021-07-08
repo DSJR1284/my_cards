@@ -17,11 +17,19 @@ class CardCall{
 
     createCard(){
         const card = {
-            name: document.getElementBy('name').value, 
-            image: document.getElementBy('image').value,  
-            team: document.getElementBy('team').value,
-            
+            name: document.querySelector("#name").value, 
+            image: document.querySelector("#image").value,  
+            team: document.querySelector("#team").value,
+            category_id: 1             
         }
+        debugger;
+        
+        const configObj = {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'            
+            },
+            body: JSON.stringify(card)
     }
 
 }
