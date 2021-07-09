@@ -15,13 +15,11 @@ class CardsController < ApplicationController
 
   # POST /cards
   def create
-    card = Card.new(card_params)
-
-    if card.save
-      render json: card, status: :created, location: card
+    @card = Card.new(card_params)
+    if @card.save
+      render json: @card, status: :created, location: @card
     else
-      render json: {message: "Card Was Not Added to Collection"}
-      
+      render json: @card.errors, status: :unprocessable_entity
     end
   end
 
