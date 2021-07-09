@@ -20,7 +20,7 @@ class CardCall{
             name: document.querySelector("#name").value, 
             image: document.querySelector("#image").value,  
             team: document.querySelector("#team").value,
-            category_id: 1            
+            category_id: document.querySelector("#sport")
         }
             
         const configObj = {

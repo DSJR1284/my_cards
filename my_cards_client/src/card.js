@@ -26,7 +26,7 @@ class Card{
             <h3>${this.name}</h3>
                 <img src='${this.image}' width = 150px />
                 <h3>${this.team}</h3>
-                
+
             </div>
             <button id="delete-btn">Remove Card</button>            
             `
@@ -49,11 +49,11 @@ class Card{
             <label for="sport">Sport:</label>
             <select name="sport" id="sport">
                 <option selected disabled hidden>Select Sport</option>
+                <option id="category_id" value="football">FootBall</option>
                 <option id="category_id" value="basketball">Basketball</option>
-                <option value="baseball">Baseball</option>
-                <option value="football">Football</option>
-                <option value="hockey">Hockey</option>
-            </select>
+                <option id="category_id" value="baseball">Baseball</option>
+                <option id="category_id" value="hockey">Hockey</option>
+            </select>            
                 <input type="submit" id="create" value="Add A Card">
         </form>`
     }
