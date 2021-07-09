@@ -7,7 +7,12 @@ class CategoryCall{
     getSports(){
         fetch(`${this.endpoint}/categories`)
         .then(resp => resp.json())
-        .then(category => {debugger;})
+        .then(category => {category})
     }
-    
-}
+
+//     getCardList(){
+//         fetch(`${this.endpoint}/categories/${id}`)
+//         .then(resp => resp.json())
+//         .then(category => {debugger;})
+//     }
+// }

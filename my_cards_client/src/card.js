@@ -26,6 +26,7 @@ class Card{
             <h3>${this.name}</h3>
                 <img src='${this.image}' width = 150px />
                 <h3>${this.team}</h3>
+                
             </div>
             <button id="delete-btn">Remove Card</button>            
             `
