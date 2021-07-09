@@ -60,8 +60,7 @@ class Card{
     }
 
     deleteCard = () => {
-        debugger;
-        if (event.target.innerText === 'Remove Card'){
+            if (event.target.innerText === 'Remove Card'){
             this.element.remove()
             cardCall.deleteCard(this.id)
         }

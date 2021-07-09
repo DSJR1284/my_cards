@@ -11,8 +11,10 @@ class CardCall{
             for (const card of cards){
                 const c = new Card(card)
                 c.displayCards()
-            }            
+            }  
+                  
         })
+        .then(json => alert(json.message))
     }
 
     createCard(){
@@ -37,6 +39,7 @@ class CardCall{
             const c = new Card(card)
             c.displayCards()
         })
+        .then(json => alert(json.message))
     }
 
     deleteCard(id){
@@ -47,6 +50,6 @@ class CardCall{
             }
         })
         .then(resp => resp.json())
-        .then(json => {debugger;})
+        .then(json => alert(json.message))
     }
 }

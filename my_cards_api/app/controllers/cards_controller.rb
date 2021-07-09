@@ -20,7 +20,8 @@ class CardsController < ApplicationController
     if card.save
       render json: card, status: :created, location: card
     else
-      render json: card.errors, status: :unprocessable_entity
+      render json: {message: "Card Was Not Added to Collection"}
+      
     end
   end
 
