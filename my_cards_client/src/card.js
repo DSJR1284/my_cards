@@ -16,7 +16,6 @@ class Card{
         this.element.dataset.id = this.id
         this.element.id = `card-${this.id}`
         this.element.addEventListener('click', this.deleteCard)
-
         Card.all.push(this)
     }
 
@@ -28,9 +27,8 @@ class Card{
                 <img src='${this.image}' width = 150px />
                 <h3>${this.team}</h3>
             </div>
-            <button id="delete-btn">Remove Card</button>             
+            <button id="delete-btn">Remove Card</button>            
             `
-
             return this.element
     }
 
@@ -50,7 +48,7 @@ class Card{
             <label for="sport">Sport:</label>
             <select name="sport" id="sport">
                 <option selected disabled hidden>Select Sport</option>
-                <option value="basketball">Basketball</option>
+                <option id="category_id" value="basketball">Basketball</option>
                 <option value="baseball">Baseball</option>
                 <option value="football">Football</option>
                 <option value="hockey">Hockey</option>
@@ -65,5 +63,4 @@ class Card{
             cardCall.deleteCard(this.id)
         }
     }
-
 }

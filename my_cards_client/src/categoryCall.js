@@ -7,13 +7,7 @@ class CategoryCall{
     getSports(){
         fetch(`${this.endpoint}/categories`)
         .then(resp => resp.json())
-        .then(category => {
-            for(const category of categories){
-                const s = new Catergory(category)
-                c.displaySports()
-            }
-        } )
+        .then(category => {debugger;})
     }
-
-
+    
 }

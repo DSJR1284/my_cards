@@ -4,7 +4,6 @@ class CardsController < ApplicationController
   # GET /cards
   def index
     @cards = Card.all
-
     render json: @cards
   end
 
@@ -19,7 +18,7 @@ class CardsController < ApplicationController
     if @card.save
       render json: @card, status: :created, location: @card
     else
-      render json: @card.errors, status: :unprocessable_entity
+      render json: @card.errors, status: :unprocessable_entity      
     end
   end
 
@@ -35,7 +34,7 @@ class CardsController < ApplicationController
   # DELETE /cards/1
   def destroy
     @card.destroy
-    render json: {message: "Card was Removed From Collection"}
+    render json: {message: "Card Removed From Collection"}
   end
 
   private

@@ -1,19 +1,18 @@
-class Categories{
+class Category{
 
     static all =[]
+    static sportsCard = document.querySelector("#category-container")
     
     constructor({id, sport}){
         this.id = id 
         this.sport = sport
 
-        this.element = document.createElement('li')
+        this.element = document.createElement('ul')
         this.element.dataset.id = this.id 
         thie.element.id = `category-${this.id}`
 
-            Owner.all.push(this)
+        Category.all.push(this)
     }
 
-
-    
 
 }

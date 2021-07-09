@@ -20,7 +20,7 @@ class CardCall{
             name: document.querySelector("#name").value, 
             image: document.querySelector("#image").value,  
             team: document.querySelector("#team").value,
-            category_id: document.querySelector("#sport").value             
+            category_id: 1            
         }
             
         const configObj = {
@@ -33,7 +33,7 @@ class CardCall{
 
         fetch(`${this.endpoint}/cards`, configObj)
         .then(resp => resp.json())
-        .then(cards => {
+        .then(card => {
             const c = new Card(card)
             c.displayCards()
         })
