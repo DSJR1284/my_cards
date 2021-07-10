@@ -1,6 +1,5 @@
 class Card{
 
-    
     static all = []
     static showCard = document.querySelector("#card-container")
     static cardForm = document.querySelector("#form-container")
@@ -10,8 +9,7 @@ class Card{
         this.name = name 
         this.image = image
         this.team = team 
-        this.category_id = category_id
-        
+        this.category_id = category_id        
 
         this.element = document.createElement('div')
         this.element.dataset.id = this.id
