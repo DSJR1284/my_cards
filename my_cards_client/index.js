@@ -7,7 +7,7 @@ const removeCard = document.querySelector("#delete-btn")
 const sportsCards = document.querySelector("#category-container")
 
 
-categoryCall.getSports()
+// Category.getSports()
 
 cardCall.getCards()
 Card.displayCardForm()

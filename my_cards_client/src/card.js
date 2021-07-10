@@ -11,6 +11,7 @@ class Card{
         this.image = image
         this.team = team 
         this.category_id = category_id
+        
 
         this.element = document.createElement('div')
         this.element.dataset.id = this.id
@@ -20,15 +21,19 @@ class Card{
     }
 
     cardHTML(){       
-        this.element.innerHTML += ` 
-            <br>           
-            <div>
-            <h3>${this.name}</h3>
-                <img src='${this.image}' width = 150px />
-                <h3>${this.team}</h3>
-
+        this.element.innerHTML += `            
+            <div class="flip-card"> 
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">      
+                <img src='${this.image}'/>
             </div>
-            <button id="delete-btn">Remove Card</button>            
+            <div class="flip-card-back">
+                <h3>${this.name}</h3>
+                <h3>${this.team}</h3>            
+                <button id="delete-btn">Remove Card</button> 
+                </div>
+                </div>          
+                </div> <br> <br>
             `
             return this.element
     }

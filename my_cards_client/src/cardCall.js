@@ -16,11 +16,24 @@ class CardCall{
     }
 
     createCard(){
-        const card = {
+        let category_id
+        if(document.querySelector("#sport").value === "football"){
+            category_id = 1
+        } 
+        if(document.querySelector("#sport").value === "basketball"){
+            category_id = 2
+        }
+        if(document.querySelector("#sport").value === "baseball"){
+            category_id = 3
+        }
+        if(document.querySelector("#sport").value === "hockey"){
+            category_id = 4
+        }          
+        const card = { 
             name: document.querySelector("#name").value, 
             image: document.querySelector("#image").value,  
             team: document.querySelector("#team").value,
-            category_id: document.querySelector("#sport")
+            category_id: category_id            
         }
             
         const configObj = {
