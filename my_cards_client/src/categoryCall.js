@@ -7,6 +7,6 @@ class CategoryCall{
     getSports(){
         fetch(`${this.endpoint}/categories`)
         .then(resp => resp.json())      
-        .then(category => (category))
+        .then(category => console.log(category))
     }
  }

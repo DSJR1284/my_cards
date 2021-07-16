@@ -7,7 +7,7 @@ const removeCard = document.querySelector("#delete-btn")
 const sportsCards = document.querySelector("#category-container")
 
 
-// Category.getSports()
+categoryCall.getSports()
 
 cardCall.getCards()
 Card.displayCardForm()
@@ -16,4 +16,6 @@ Card.cardForm.addEventListener('submit', addACard)
 function addACard(){
     cardCall.createCard()
 }
+
+
 
