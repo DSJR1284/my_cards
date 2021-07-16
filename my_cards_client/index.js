@@ -13,8 +13,6 @@ cardCall.getCards()
 Card.displayCardForm()
 Card.cardForm.addEventListener('submit', addACard)
 
-
-
 function addACard(){
     cardCall.createCard()
 }
