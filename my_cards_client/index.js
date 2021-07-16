@@ -17,5 +17,9 @@ function addACard(){
     cardCall.createCard()
 }
 
+function displaySports(){
+    categoryCall.sportsLink()
+}
+
 
 
