@@ -13,14 +13,18 @@ class Category{
 
     sportHTML(){
         this.sport.innerHTML += `
-            <link class="football"> 
-            </link>
-            <link class="basketball"> 
-            </link>
-            <link class="baseball"> 
-            </link>
-            <link class="hockey"> 
-            </link>
+            <div id="football">
+                <link href=" ">
+            </div> 
+            <div id="basketball">
+                <link href=" ">
+            </div> 
+            <div id="baseball">
+                <link href=" ">
+            </div> 
+            <div id="hockey">
+                <link href=" ">
+            </div> 
             `
     }
 
