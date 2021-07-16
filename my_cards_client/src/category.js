@@ -5,8 +5,16 @@ class Category{
     
     constructor({id, sport}){
         this.id = id 
-        this.sport = sport       
+        this.sport = sport     
 
         Category.all(this)
+    }
+
+    sportHTML(){
+        this.sport
+    }
+
+    static displaySportsLink(){
+        Category.sportsCard.append(this.sportHTML())
     }
 }
