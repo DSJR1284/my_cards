@@ -9,5 +9,5 @@ class Category{
         this.sport = document.createElement('div')
         Category.all(this)
     }
-    
+
 }
