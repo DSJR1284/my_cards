@@ -1,6 +1,6 @@
 class Card{
 
-    static all = [] //@@all = []
+    static all = [] 
     static showCard = document.querySelector("#card-container")
     static cardForm = document.querySelector("#form-container")
 
